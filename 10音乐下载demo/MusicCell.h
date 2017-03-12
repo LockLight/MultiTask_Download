@@ -7,7 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "MusicModel.h"
 @interface MusicCell : UITableViewCell
+
+@property (nonatomic, strong) MusicModel *model;
+@property (weak, nonatomic) IBOutlet UIProgressView *progressView;
+@property (weak, nonatomic) IBOutlet UILabel *musicLabel;
+@property (weak, nonatomic) IBOutlet UIButton *startOrPauseButton;
 
 @end

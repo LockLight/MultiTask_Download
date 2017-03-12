@@ -15,6 +15,11 @@
 		E122791D1E7545AB007C3487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E122791B1E7545AB007C3487 /* LaunchScreen.storyboard */; };
 		E12279271E754623007C3487 /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E12279251E754623007C3487 /* MusicCell.m */; };
 		E12279281E754623007C3487 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12279261E754623007C3487 /* MusicCell.xib */; };
+		E122792B1E754AF0007C3487 /* MusicModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E122792A1E754AF0007C3487 /* MusicModel.m */; };
+		E12279351E754BF2007C3487 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = E122792D1E754BF2007C3487 /* LICENSE */; };
+		E12279361E754BF2007C3487 /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = E122792E1E754BF2007C3487 /* README.md */; };
+		E12279371E754BF2007C3487 /* NSObject+YYModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E12279311E754BF2007C3487 /* NSObject+YYModel.m */; };
+		E12279381E754BF2007C3487 /* YYClassInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = E12279331E754BF2007C3487 /* YYClassInfo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +36,15 @@
 		E12279241E754623007C3487 /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
 		E12279251E754623007C3487 /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
 		E12279261E754623007C3487 /* MusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
+		E12279291E754AF0007C3487 /* MusicModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicModel.h; sourceTree = "<group>"; };
+		E122792A1E754AF0007C3487 /* MusicModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicModel.m; sourceTree = "<group>"; };
+		E122792D1E754BF2007C3487 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		E122792E1E754BF2007C3487 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		E12279301E754BF2007C3487 /* NSObject+YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+YYModel.h"; sourceTree = "<group>"; };
+		E12279311E754BF2007C3487 /* NSObject+YYModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+YYModel.m"; sourceTree = "<group>"; };
+		E12279321E754BF2007C3487 /* YYClassInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYClassInfo.h; sourceTree = "<group>"; };
+		E12279331E754BF2007C3487 /* YYClassInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = YYClassInfo.m; sourceTree = "<group>"; };
+		E12279341E754BF2007C3487 /* YYModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = YYModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +77,7 @@
 		E122790C1E7545AB007C3487 /* 10音乐下载demo */ = {
 			isa = PBXGroup;
 			children = (
+				E122792C1E754BF2007C3487 /* YYModel */,
 				E12279101E7545AB007C3487 /* AppDelegate.h */,
 				E12279111E7545AB007C3487 /* AppDelegate.m */,
 				E12279131E7545AB007C3487 /* ViewController.h */,
@@ -75,6 +90,8 @@
 				E12279241E754623007C3487 /* MusicCell.h */,
 				E12279251E754623007C3487 /* MusicCell.m */,
 				E12279261E754623007C3487 /* MusicCell.xib */,
+				E12279291E754AF0007C3487 /* MusicModel.h */,
+				E122792A1E754AF0007C3487 /* MusicModel.m */,
 			);
 			path = "10音乐下载demo";
 			sourceTree = "<group>";
@@ -85,6 +102,28 @@
 				E122790E1E7545AB007C3487 /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E122792C1E754BF2007C3487 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				E122792D1E754BF2007C3487 /* LICENSE */,
+				E122792E1E754BF2007C3487 /* README.md */,
+				E122792F1E754BF2007C3487 /* YYModel */,
+			);
+			path = YYModel;
+			sourceTree = "<group>";
+		};
+		E122792F1E754BF2007C3487 /* YYModel */ = {
+			isa = PBXGroup;
+			children = (
+				E12279301E754BF2007C3487 /* NSObject+YYModel.h */,
+				E12279311E754BF2007C3487 /* NSObject+YYModel.m */,
+				E12279321E754BF2007C3487 /* YYClassInfo.h */,
+				E12279331E754BF2007C3487 /* YYClassInfo.m */,
+				E12279341E754BF2007C3487 /* YYModel.h */,
+			);
+			path = YYModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,6 +188,7 @@
 				E122791A1E7545AB007C3487 /* Assets.xcassets in Resources */,
 				E12279181E7545AB007C3487 /* Main.storyboard in Resources */,
 				E12279281E754623007C3487 /* MusicCell.xib in Resources */,
+				E12279351E754BF2007C3487 /* LICENSE in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -159,8 +199,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E12279361E754BF2007C3487 /* README.md in Sources */,
 				E12279151E7545AB007C3487 /* ViewController.m in Sources */,
+				E12279371E754BF2007C3487 /* NSObject+YYModel.m in Sources */,
 				E12279121E7545AB007C3487 /* AppDelegate.m in Sources */,
+				E12279381E754BF2007C3487 /* YYClassInfo.m in Sources */,
+				E122792B1E754AF0007C3487 /* MusicModel.m in Sources */,
 				E122790F1E7545AB007C3487 /* main.m in Sources */,
 				E12279271E754623007C3487 /* MusicCell.m in Sources */,
 			);
@@ -317,6 +361,7 @@
 				E12279231E7545AB007C3487 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

@@ -12,13 +12,15 @@
 
 - (void)awakeFromNib {
     [super awakeFromNib];
-    // Initialization code
 }
 
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated {
-    [super setSelected:selected animated:animated];
-
-    // Configure the view for the selected state
+- (void) setModel:(MusicModel *)model {
+    _model = model;
+    _musicLabel.text = model.name;
+    [_startOrPauseButton setTitle:@"开始" forState:UIControlStateNormal];
+    _progressView.progress = 0.5;
 }
 
+- (IBAction)startOrPauseButton:(UIButton *)sender {
+}
 @end

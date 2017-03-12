@@ -7,22 +7,32 @@
 //
 
 #import "ViewController.h"
+#import "MusicCell.h"
 
-@interface ViewController ()
+static NSString *identifier = @"musicCell";
 
+@interface ViewController ()<UITableViewDataSource>
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 @end
 
 @implementation ViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    self.automaticallyAdjustsScrollViewInsets = NO;
+    [_tableView registerNib:[UINib nibWithNibName:@"MusicCell" bundle:nil] forCellReuseIdentifier:identifier];
 }
 
+#pragma mark - UITableViewDataSource
+- (NSInteger) tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
+    return 20;
+}
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (MusicCell *) tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    MusicCell *cell = [tableView dequeueReusableCellWithIdentifier:identifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = indexPath.description;
+    return  cell;
 }
 
 

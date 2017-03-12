@@ -13,6 +13,8 @@
 		E12279181E7545AB007C3487 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E12279161E7545AB007C3487 /* Main.storyboard */; };
 		E122791A1E7545AB007C3487 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E12279191E7545AB007C3487 /* Assets.xcassets */; };
 		E122791D1E7545AB007C3487 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E122791B1E7545AB007C3487 /* LaunchScreen.storyboard */; };
+		E12279271E754623007C3487 /* MusicCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E12279251E754623007C3487 /* MusicCell.m */; };
+		E12279281E754623007C3487 /* MusicCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E12279261E754623007C3487 /* MusicCell.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,9 @@
 		E12279191E7545AB007C3487 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E122791C1E7545AB007C3487 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E122791E1E7545AB007C3487 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E12279241E754623007C3487 /* MusicCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MusicCell.h; sourceTree = "<group>"; };
+		E12279251E754623007C3487 /* MusicCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MusicCell.m; sourceTree = "<group>"; };
+		E12279261E754623007C3487 /* MusicCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MusicCell.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -67,6 +72,9 @@
 				E122791B1E7545AB007C3487 /* LaunchScreen.storyboard */,
 				E122791E1E7545AB007C3487 /* Info.plist */,
 				E122790D1E7545AB007C3487 /* Supporting Files */,
+				E12279241E754623007C3487 /* MusicCell.h */,
+				E12279251E754623007C3487 /* MusicCell.m */,
+				E12279261E754623007C3487 /* MusicCell.xib */,
 			);
 			path = "10音乐下载demo";
 			sourceTree = "<group>";
@@ -140,6 +148,7 @@
 				E122791D1E7545AB007C3487 /* LaunchScreen.storyboard in Resources */,
 				E122791A1E7545AB007C3487 /* Assets.xcassets in Resources */,
 				E12279181E7545AB007C3487 /* Main.storyboard in Resources */,
+				E12279281E754623007C3487 /* MusicCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -153,6 +162,7 @@
 				E12279151E7545AB007C3487 /* ViewController.m in Sources */,
 				E12279121E7545AB007C3487 /* AppDelegate.m in Sources */,
 				E122790F1E7545AB007C3487 /* main.m in Sources */,
+				E12279271E754623007C3487 /* MusicCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

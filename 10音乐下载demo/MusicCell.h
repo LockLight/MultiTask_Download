@@ -8,8 +8,17 @@
 
 #import <UIKit/UIKit.h>
 #import "MusicModel.h"
+@class MusicCell;
+
+@protocol MusicCellDelegate <NSObject>
+
+- (void)startorPause:(MusicCell *)cell;
+
+@end
+
 @interface MusicCell : UITableViewCell
 
+@property (nonatomic, weak) id<MusicCellDelegate> delegate;
 @property (nonatomic, strong) MusicModel *model;
 @property (weak, nonatomic) IBOutlet UIProgressView *progressView;
 @property (weak, nonatomic) IBOutlet UILabel *musicLabel;

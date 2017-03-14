@@ -32,4 +32,10 @@
  */
 @property (nonatomic, copy) NSString *size;
 
+@property (nonatomic, assign) float progress;
+
+@property (nonatomic, assign) BOOL isDownLoading;
+
+@property (nonatomic, assign) BOOL isFinish;
+
 @end

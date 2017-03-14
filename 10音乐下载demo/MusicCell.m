@@ -17,10 +17,17 @@
 - (void) setModel:(MusicModel *)model {
     _model = model;
     _musicLabel.text = model.name;
-    [_startOrPauseButton setTitle:@"开始" forState:UIControlStateNormal];
-    _progressView.progress = 0.5;
+    
+    NSString *title = model.isDownLoading ? @"暂停" : @"开始";
+    [_startOrPauseButton setTitle:title forState:UIControlStateNormal];
+    
+    _startOrPauseButton.enabled = model.isFinish ? NO : YES;
+    _progressView.progress = model.progress;
 }
 
 - (IBAction)startOrPauseButton:(UIButton *)sender {
+    if([self.delegate respondsToSelector:@selector(startorPause:)]){
+       [self.delegate startorPause:self];
+    }
 }
 @end
